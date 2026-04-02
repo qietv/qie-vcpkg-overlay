@@ -1,0 +1,27 @@
+From 43d69987afed515f08bd354da0495400287681e3 Mon Sep 17 00:00:00 2001
+From: MouriNaruto <Kenji.Mouri@outlook.com>
+Date: Thu, 2 Apr 2026 15:27:53 +0800
+Subject: [PATCH] Add Mile.Windows.UniCrt integration support.
+
+---
+ scripts/toolchains/windows.cmake | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/scripts/toolchains/windows.cmake b/scripts/toolchains/windows.cmake
+index 3cc90cc886..165198779f 100644
+--- a/scripts/toolchains/windows.cmake
++++ b/scripts/toolchains/windows.cmake
+@@ -56,6 +56,10 @@ if(NOT _VCPKG_WINDOWS_TOOLCHAIN)
+         endif()
+     endif()
+ 
++    if(DEFINED ENV{MILE_WINDOWS_UNICRT_HOME})
++        include("$ENV{MILE_WINDOWS_UNICRT_HOME}/Mile.Windows.UniCrt.cmake")
++    endif()
++
+     if(VCPKG_CRT_LINKAGE STREQUAL "dynamic")
+         set(VCPKG_CRT_LINK_FLAG_PREFIX "/MD")
+     elseif(VCPKG_CRT_LINKAGE STREQUAL "static")
+-- 
+2.53.0.windows.2
+
