@@ -1,4 +1,4 @@
-## 
+﻿## 
 ## PROJECT:    qie-vcpkg-overlay
 ## FILE:       x86-windows-unicrt.cmake
 ## PURPOSE:    The vcpkg overlay triplet for Mile.Windows.UniCrt x86 target
