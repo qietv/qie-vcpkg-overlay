@@ -4,20 +4,27 @@ The vcpkg overlay ports and triplets for Qie C/C++ projects.
 
 ## Support overlay triplets
 
-### Windows (Dynamic Library) with Mile.Windows.UniCrt
+### Windows with Mile.Windows.UniCrt
+
+#### Dynamic Library
 
 - arm64-windows-unicrt
 - x64-windows-unicrt
 - x86-windows-unicrt
 
-### Android API Level 21 (Dynamic Library)
+### Android API Level 21
+
+> [!IMPORTANT]  
+> You should set ANDROID_NDK_HOME before you using these triplets.
+
+#### Dynamic Library
 
 - arm-android-21
 - arm64-android-21
 - x64-android-21
 - x86-android-21
 
-### Android API Level 21 (Static Library)
+#### Static Library
 
 - arm-android-21-static
 - arm64-android-21-static
