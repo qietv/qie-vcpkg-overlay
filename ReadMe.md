@@ -33,6 +33,9 @@ The vcpkg overlay ports and triplets for Qie C/C++ projects.
 
 ### OpenHarmony
 
+> [!IMPORTANT]  
+> You should set OHOS_SDK_ROOT before you using these triplets.
+
 #### Dynamic Library
 
 - arm-ohos-shared
