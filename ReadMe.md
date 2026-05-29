@@ -31,6 +31,14 @@ The vcpkg overlay ports and triplets for Qie C/C++ projects.
 - x64-android-21-static
 - x86-android-21-static
 
+### OpenHarmony
+
+#### Dynamic Library
+
+- arm-ohos-shared
+- arm64-ohos-shared
+- x64-ohos-shared
+
 ## Support overlay ports
 
 ## Usage
