@@ -42,6 +42,12 @@ The vcpkg overlay ports and triplets for Qie C/C++ projects.
 - arm64-ohos-shared
 - x64-ohos-shared
 
+#### Static Library
+
+- arm-ohos-static
+- arm64-ohos-static
+- x64-ohos-static
+
 ## Support overlay ports
 
 ## Usage
