@@ -50,6 +50,8 @@ The vcpkg overlay ports and triplets for Qie C/C++ projects.
 
 ## Support overlay ports
 
+- qiemedia
+
 ## Usage
 
 ## Documents
