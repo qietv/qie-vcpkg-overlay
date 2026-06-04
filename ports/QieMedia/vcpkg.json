@@ -1,0 +1,21 @@
+{
+  "name": "qiemedia",
+  "version": "1.0.73",
+  "description": "QieMedia Dependencies",
+  "dependencies": [
+    {
+      "name": "ffmpeg",
+      "features": [
+        "all"
+      ]
+    },
+    "jsoncpp",
+    "soundtouch",
+    {
+      "name": "boost-asio",
+      "features": [
+        "ssl"
+      ]
+    }
+  ]
+}
