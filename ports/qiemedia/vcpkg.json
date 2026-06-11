@@ -1,6 +1,6 @@
 {
   "name": "qiemedia",
-  "version": "1.0.80",
+  "version": "1.0.80.0",
   "description": "QieMedia Dependencies",
   "dependencies": [
     {
