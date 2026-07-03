@@ -1,45 +1,23 @@
 {
   "name": "qiemedia",
-  "version": "1.0.80.0",
+  "version": "1.0.102.0",
   "description": "QieMedia Dependencies",
   "dependencies": [
     {
       "name": "ffmpeg",
       "features": [
-        "avcodec",
-        "avdevice",
-        "avfilter",
-        "avformat",
-        "swresample",
-        "swscale",
-        "aom",
-        "bzip2",
-        "freetype",
-        "iconv",
-        "lzma",
-        "mp3lame",
-        "openjpeg",
-        "openmpt",
-        "opus",
-        "snappy",
-        "soxr",
-        "speex",
-        "theora",
-        "vorbis",
-        "vpx",
-        "vulkan",
-        "webp",
-        "xml2",
-        "zlib",
-        "ass",
-        "fontconfig",
-        "fribidi",
-        "modplug",
-        "openh264",
-        "srt"
+        "all"
       ]
     },
     "jsoncpp",
-    "soundtouch"
+    "soundtouch",
+    {
+      "name": "boost-asio",
+      "features": [
+        "ssl"
+      ]
+    },
+    "boost-bind",
+    "boost-thread"
   ]
 }
