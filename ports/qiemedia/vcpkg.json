@@ -1,6 +1,6 @@
 {
   "name": "qiemedia",
-  "version": "1.0.102.0",
+  "version": "1.0.120.0",
   "description": "QieMedia Dependencies",
   "dependencies": [
     {
@@ -18,6 +18,8 @@
       ]
     },
     "boost-bind",
-    "boost-thread"
+    "boost-thread",
+    "boost-serialization",
+    "boost-uuid"
   ]
 }
