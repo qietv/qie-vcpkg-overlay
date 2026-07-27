@@ -15,10 +15,7 @@ jobs:
     - uses: microsoft/setup-msbuild@v3
     - name: Build
       shell: cmd
-      run:  |
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        onekey-build-qiemedia.cmd
+      run: onekey-build-qiemedia.cmd
     - uses: actions/upload-artifact@v7
       with:
         name: QieMedia.Packages
