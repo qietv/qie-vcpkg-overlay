@@ -1,25 +1,17 @@
 {
   "name": "qiemedia",
-  "version": "1.0.120.0",
+  "version": "1.0.122.0",
   "description": "QieMedia Dependencies",
   "dependencies": [
     {
       "name": "ffmpeg",
       "features": [
-        "all"
+        "all",
+        "ffmpeg",
+        "ffprobe"
       ]
     },
     "jsoncpp",
-    "soundtouch",
-    {
-      "name": "boost-asio",
-      "features": [
-        "ssl"
-      ]
-    },
-    "boost-bind",
-    "boost-thread",
-    "boost-serialization",
-    "boost-uuid"
+    "soundtouch"
   ]
 }
