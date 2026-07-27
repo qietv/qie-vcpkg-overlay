@@ -14,7 +14,7 @@ jobs:
         submodules: 'recursive'
     - uses: microsoft/setup-msbuild@v3
     - name: Build
-      run: onekey-build-qiemedia.cmd
+      run: ./onekey-build-qiemedia.cmd
     - uses: actions/upload-artifact@v7
       with:
         name: QieMedia.Packages
