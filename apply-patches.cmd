@@ -2,6 +2,9 @@
 
 @echo off
 
+call "%~dp0reset-submodules.cmd"
+if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
+
 pushd "%~dp0vcpkg"
 git am --ignore-whitespace "%~dp0Patches\MileWindowsUniCrtVcpkgIntegration.patch"
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
