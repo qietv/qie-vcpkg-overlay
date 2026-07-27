@@ -1,0 +1,21 @@
+﻿name: Build QieMedia Dependencies 
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [self-hosted, windows, x64]
+    env:
+      POWERSHELL_TELEMETRY_OPTOUT: 1
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        submodules: 'recursive'
+    - uses: microsoft/setup-msbuild@v3
+    - name: Build
+      run: onekey-build-qiemedia.cmd
+    - uses: actions/upload-artifact@v7
+      with:
+        name: QieMedia.Packages
+        path: Output\installed
