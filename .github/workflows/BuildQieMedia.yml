@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted, windows, x64]
+    runs-on: [self-hosted, Windows, X64]
     env:
       POWERSHELL_TELEMETRY_OPTOUT: 1
     steps:
