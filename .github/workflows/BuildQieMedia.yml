@@ -15,7 +15,12 @@ jobs:
     - uses: microsoft/setup-msbuild@v3
     - name: Build
       run: ./onekey-build-qiemedia.cmd
+    - name: Compress
+      run: |
+        Remove-Item Output\QieMedia.Packages.7z -Force -ErrorAction SilentlyContinue
+        7z a -t7z -m0=LZMA2 -mx=9 -md=256m -mfb=256 -ms=on Output\QieMedia.Packages.7z Output\installed\*
     - uses: actions/upload-artifact@v7
       with:
         name: QieMedia.Packages
-        path: Output\installed
+        path: Output\QieMedia.Packages.7z
+        compression-level: 0
