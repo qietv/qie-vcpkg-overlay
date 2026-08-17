@@ -6,12 +6,14 @@
     {
       "name": "ffmpeg",
       "features": [
-        "all",
+        "all-gpl",
         "ffmpeg",
         "ffprobe"
       ]
     },
     "jsoncpp",
-    "soundtouch"
+    "soundtouch",
+    "libdvdnav",
+    "libbluray"
   ]
 }

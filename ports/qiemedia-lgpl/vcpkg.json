@@ -12,6 +12,7 @@
       ]
     },
     "jsoncpp",
-    "soundtouch"
+    "soundtouch",
+    "libbluray"
   ]
 }
