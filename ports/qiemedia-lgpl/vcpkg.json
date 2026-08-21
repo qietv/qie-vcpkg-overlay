@@ -1,6 +1,6 @@
 {
   "name": "qiemedia-lgpl",
-  "version": "1.0.147.0",
+  "version": "1.0.151.0",
   "description": "QieMedia Dependencies (LGPL Only)",
   "dependencies": [
     {
@@ -13,6 +13,7 @@
     },
     "jsoncpp",
     "soundtouch",
-    "libbluray"
+    "libbluray",
+    "libsmb2"
   ]
 }

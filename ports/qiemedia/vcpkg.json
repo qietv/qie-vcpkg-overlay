@@ -1,6 +1,6 @@
 {
   "name": "qiemedia",
-  "version": "1.0.147.0",
+  "version": "1.0.151.0",
   "description": "QieMedia Dependencies",
   "dependencies": [
     {
@@ -14,6 +14,7 @@
     "jsoncpp",
     "soundtouch",
     "libdvdnav",
-    "libbluray"
+    "libbluray",
+    "libsmb2"
   ]
 }
